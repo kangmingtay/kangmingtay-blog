@@ -5,7 +5,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Menu from "../components/menu"
+import Banner from "../components/banner"
 import { rhythm } from "../utils/typography"
 
 
@@ -41,7 +41,7 @@ const HomeIndex = ({data, location}) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Home" />
-      <Menu/>
+      <Banner/>
       <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug

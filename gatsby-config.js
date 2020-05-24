@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Kang Ming Tay`,
+    title: `Kang Ming`,
     author: {
-      name: `Kang Ming Tay`,
+      name: `Kang Ming`,
       summary: `who lives and works in Singapore building useful things.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,

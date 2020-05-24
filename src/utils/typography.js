@@ -4,7 +4,7 @@ import GithubTheme from "typography-theme-github"
 GithubTheme.overrideThemeStyles = () => {
   return {
     "a": {
-      // color: `black`,
+      color: `#FF8D33`,
     },
     "a:link": {
       textDecoration: `none`,

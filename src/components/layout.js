@@ -12,15 +12,15 @@ const Layout = ({ location, title, children }) => {
         marginTop: 0,
       }}
     >
-      <Link
-        style={{
-          boxShadow: `none`,
-          color: `inherit`,
-        }}
-        to={`/`}
-      >
-        {title}
-      </Link>
+      <ul style={{
+          listStyle: 'none',
+          display: 'flex',
+          justifyContent: 'space-evenly',
+      }}>
+          <li><Link style={{ boxShadow: `none`, color: `inherit`}} to={`/`}>{title}</Link></li>
+          <li><Link style={{ boxShadow: `none`, color: `inherit`}} to="/about">About</Link></li>
+          <li><Link style={{ boxShadow: `none`, color: `inherit`}} to="/blog">Blog</Link></li>
+      </ul>
     </h3>
   )
 

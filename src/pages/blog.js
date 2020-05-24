@@ -5,7 +5,7 @@ import { graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Menu from "../components/menu"
+import Banner from "../components/banner"
 
 
 
@@ -40,7 +40,7 @@ const BlogIndex = ({data, location}) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <Menu/>
+      <Banner opacity={0.5}/>
       <Bio />
     </Layout>
   )
