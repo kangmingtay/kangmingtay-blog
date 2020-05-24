@@ -40,7 +40,7 @@ const HomeIndex = ({data, location}) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Kang Ming" />
+      <SEO title="Home" />
       <Menu/>
       <Bio />
       {posts.map(({ node }) => {

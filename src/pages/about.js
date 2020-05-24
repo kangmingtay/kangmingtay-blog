@@ -38,7 +38,7 @@ const AboutIndex = ({data, location}) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Kang Ming" />
+      <SEO title="About" />
       <Menu/>
       <Bio />
     </Layout>

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Personal Blog`,
+    title: `Kang Ming Tay`,
     author: {
       name: `Kang Ming Tay`,
       summary: `who lives and works in Singapore building useful things.`,
