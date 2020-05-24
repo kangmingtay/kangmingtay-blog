@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Kang Ming Tay`,
+    title: `Personal Blog`,
     author: {
       name: `Kang Ming Tay`,
       summary: `who lives and works in Singapore building useful things.`,
@@ -66,7 +66,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/mountain.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
