@@ -13164,6 +13164,11 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typeface-inconsolata@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-inconsolata/-/typeface-inconsolata-0.0.72.tgz#6b5c92132c7d3e83f7a17025087d8d717ada63d5"
+  integrity sha512-ITFhcI2ANWmSEPVgQgPJHh6RyiCf1pnkRXj1VxjsxfSwRrXFGgGITRJV+HxW7kTRDx+3/6RReT2/SWsMPqJaTA==
+
 typeface-merriweather@0.0.72:
   version "0.0.72"
   resolved "https://registry.yarnpkg.com/typeface-merriweather/-/typeface-merriweather-0.0.72.tgz#2b990f5293252052d51d170c82d3892319ff0555"
@@ -13183,6 +13188,13 @@ typography-normalize@^0.16.19:
   version "0.16.19"
   resolved "https://registry.yarnpkg.com/typography-normalize/-/typography-normalize-0.16.19.tgz#58e0cf12466870c5b27006daa051fe7307780660"
   integrity sha512-vtnSv/uGBZVbd4e/ZhZB9HKBgKKlWQUXw74+ADIHHxzKp27CEf8PSR8TX1zF2qSyQ9/qMdqLwXYz8yRQFq9JLQ==
+
+typography-theme-github@^0.16.19:
+  version "0.16.19"
+  resolved "https://registry.yarnpkg.com/typography-theme-github/-/typography-theme-github-0.16.19.tgz#91842d3e0a92ad952adf6350ede0924d574193e8"
+  integrity sha512-kDfFjbeh2JW3buPub1JUA39AIKQrZhMuEeqJo6P+9c9JOEMLUBPvcHGrNd+wtAuZlVehPbqG6bcW6KAANHrsGw==
+  dependencies:
+    gray-percentage "^2.0.0"
 
 typography-theme-wordpress-2016@^0.16.19:
   version "0.16.19"

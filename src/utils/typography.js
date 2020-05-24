@@ -1,17 +1,23 @@
 import Typography from "typography"
-import Wordpress2016 from "typography-theme-wordpress-2016"
+import GithubTheme from "typography-theme-github"
 
-Wordpress2016.overrideThemeStyles = () => {
+GithubTheme.overrideThemeStyles = () => {
   return {
+    "a": {
+      // color: `black`,
+    },
+    "a:link": {
+      textDecoration: `none`,
+    },
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
   }
 }
 
-delete Wordpress2016.googleFonts
+delete GithubTheme.googleFonts
 
-const typography = new Typography(Wordpress2016)
+const typography = new Typography(GithubTheme)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {
