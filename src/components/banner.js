@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
-import Img from "gatsby-image"
+import Image from "gatsby-image"
 
 const Banner = (props) => {
     const styles = {
@@ -29,7 +29,7 @@ const Banner = (props) => {
 
     return (
         <div style={styles.div}>
-            <Img fluid={data.file.childImageSharp.fluid} style={styles.img}/>
+            <Image fluid={data.file.childImageSharp.fluid} style={styles.img}/>
         </div>
     )
 }

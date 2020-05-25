@@ -2,6 +2,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import About from "../components/about"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -38,6 +39,7 @@ const AboutIndex = ({data, location}) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="About" />
+      <About />
       <Bio />
     </Layout>
   )
