@@ -5,9 +5,6 @@ import { graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Banner from "../components/banner"
-
-
 
 export const pageQuery = graphql`
   query {
