@@ -6,6 +6,8 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Banner from "../components/banner"
+import CoverPic from "../../content/assets/algonquin.jpg"
+import { scale, rhythm } from "../utils/typography"
 
 
 export const pageQuery = graphql`
@@ -39,7 +41,6 @@ const AboutIndex = ({data, location}) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="About" />
-      <Banner opacity={0.5}/>
       <Bio />
     </Layout>
   )

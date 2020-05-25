@@ -1,25 +1,37 @@
 import React from 'react'
+import { useStaticQuery, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
-import CoverPic from "../../content/assets/algonquin.jpg"
+import Img from "gatsby-image"
 
-const banner = (props) => {
+const Banner = (props) => {
+    const styles = {
+        div: {
+            padding: `${rhythm(0)} ${rhythm(0)}`,
+        },
+        img: {
+            borderRadius:`${rhythm(1)}`,
+            opacity: props.opacity,
+            margin: `${rhythm(1)} ${rhythm(1)}`,
+        }
+    }
+
+    const data = useStaticQuery(graphql`
+        query ImageQuery {
+            file(relativePath: { eq: "algonquin.jpg" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1000) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+        }    
+    `)
+
     return (
-        <div
-            style={{
-                padding: `${rhythm(0)} ${rhythm(0)}`,
-            }}
-        >
-            <img 
-                src={CoverPic} 
-                alt="banner" 
-                style={{
-                    borderRadius:`${rhythm(1)}`,
-                    opacity: props.opacity
-                }}
-            />
-            
+        <div style={styles.div}>
+            <Img fluid={data.file.childImageSharp.fluid} style={styles.img}/>
         </div>
     )
 }
 
-export default banner;
+export default Banner;

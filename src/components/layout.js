@@ -47,7 +47,7 @@ const Layout = ({ location, title, children }) => {
       <header>{header}</header>
       <main>{children}</main>
       <footer>
-        <ul style={styles.ul}>
+        <ul style={{...styles.ul, justifyContent: 'space-around'}}>
           <li>
             © {new Date().getFullYear()}, Built with
             {` `}

@@ -40,7 +40,6 @@ const BlogIndex = ({data, location}) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <Banner opacity={0.5}/>
       <Bio />
     </Layout>
   )
