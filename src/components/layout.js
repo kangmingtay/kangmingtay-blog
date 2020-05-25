@@ -24,7 +24,12 @@ const Layout = ({ location, title, children }) => {
     link: {
       boxShadow: `none`, 
       color: `inherit`
-    }
+    },
+    alinkedin: {
+      background:`url(https://linkedin.com/favicon.ico) no-repeat left center`,
+      paddingLeft:`19px`,
+      color: `inherit`
+    },
   }
 
   const header =  (
@@ -42,9 +47,15 @@ const Layout = ({ location, title, children }) => {
       <header>{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <ul style={styles.ul}>
+          <li>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a style={{...styles.link, color: "#FF8D33"}} href="https://www.gatsbyjs.org">Gatsby</a>
+          </li>
+          <li><a style={styles.alinkedin} href="https://www.linkedin.com/in/kangmingtay/">Linkedin</a></li>
+          <li><a style={styles.link} href="https://github.com/kangmingtay">Github</a></li>
+        </ul>
       </footer>
     </div>
   )
