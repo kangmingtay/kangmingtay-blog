@@ -60,6 +60,7 @@ const Author = () => {
         <p style={styles.p}>
             In my free time, I enjoy being close to nature and escaping from the city life. This is a picture of me sitting by the lakeside in Algonquin National Park in Ontario during Fall!  
         </p>
+        <iframe title="Resume" src="https://drive.google.com/file/d/1oFyM5gMoNwuvPzesYYAyyyA-xNN3_Q5L/preview" width="750" height="750"></iframe>
       </div>
       
     </div>
