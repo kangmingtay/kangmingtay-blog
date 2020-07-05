@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import Grid from '@material-ui/core/Grid'
 
 import { rhythm } from "../utils/typography"
 
@@ -43,6 +44,9 @@ const Author = () => {
       },
       p: {
           textAlign: "justify" 
+      },
+      grid: {
+        maxWidth: "800px",
       }
   }
 //   const { author, social } = data.site.siteMetadata
@@ -60,7 +64,13 @@ const Author = () => {
         <p style={styles.p}>
             In my free time, I enjoy being close to nature and escaping from the city life. This is a picture of me sitting by the lakeside in Algonquin National Park in Ontario during Fall!  
         </p>
-        <iframe title="Resume" src="https://drive.google.com/file/d/1oFyM5gMoNwuvPzesYYAyyyA-xNN3_Q5L/preview" width="750" height="750"></iframe>
+        <Grid
+          container={true}
+          classes={styles.grid}
+        >
+          <iframe title="Resume" src="https://drive.google.com/file/d/1oFyM5gMoNwuvPzesYYAyyyA-xNN3_Q5L/preview" width="100%" height="750px"></iframe>
+        </Grid>
+        
       </div>
       
     </div>
