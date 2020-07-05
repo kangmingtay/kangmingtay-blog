@@ -16,7 +16,7 @@ const ProjectList = [
         title: "Genesys Hackathon Smart Chatbot",
         description: "Built a knowledge-base chatbot that would answer FAQs and allow the creator to update the knowledge base with new question-answer pairs if the recommended answer falls below the threshold. Used DialogFlow as the chatbot interface and wrote webhooks to make use of Genesys API.",
         links: {
-            more: "https://docs.google.com/presentation/d/1BiUeW5vs9tz3l0Ht4tYCtyfeqOyNr2Y9MfL_xLGEaq 8/edit?usp=sharing",
+            more: "https://docs.google.com/presentation/d/1BiUeW5vs9tz3l0Ht4tYCtyfeqOyNr2Y9MfL_xLGEaq8/edit?usp=sharing",
         }
     }
 ]
