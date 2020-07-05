@@ -37,6 +37,7 @@ const Layout = ({ location, title, children }) => {
       <ul style={styles.ul}>
           <li><Link style={styles.link} to={`/`}>{title}</Link></li>
           <li><Link style={styles.link} to="/about">About</Link></li>
+          <li><Link style={styles.link} to="/projects">Projects</Link></li>
           <li><Link style={styles.link} to="/blog">Blog</Link></li>
       </ul>
     </h3>
