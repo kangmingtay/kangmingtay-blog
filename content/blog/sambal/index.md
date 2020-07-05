@@ -28,6 +28,7 @@ The idea I had was for each task to be responsible for polling the different AWS
 
 However, one of the considerations I needed to make was that my application had to reduce the occurence of flapping statuses.
 > A flapping status is defined when the status of a service changes frequently over a short period of time.
+
 In order to prevent this from happening, I decided to implement a counter to keep track of the past few statuses and only update the database when the counter is greater than a threshold. The counter would also only increment if the new status is the same as the previous status. This counter was implemented using Redis, which is an in-memory database, for fast reads and writes. 
 
 #### Making it Real-Time
